@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "custom merge start"
+echo "`date` custom merge start" > mergeAlwaysTheirs.log
 O="$1" # prev version
 A="$2" # ours version
 B="$3" # theirs version
@@ -10,5 +10,5 @@ cat $B > B.txt
 # always theirs ($B)
 # $B -> $A
 cp -f $B $A
-echo "custom merge end"
+echo "`date` custom merge end" > mergeAlwaysTheirs.log
 exit 0
