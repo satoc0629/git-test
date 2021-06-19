@@ -1,0 +1,3 @@
+[merge "alwaysTheirs"]
+	name "always theirs"
+	driver PATH=$PATH:`pwd` && mergeAlwaysTheirs.sh %O %A %B
