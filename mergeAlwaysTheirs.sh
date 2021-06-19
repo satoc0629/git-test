@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "`date` custom merge start" > mergeAlwaysTheirs.log
+echo "`date` custom merge start" >> mergeAlwaysTheirs.log
 O="$1" # prev version
 A="$2" # ours version
 B="$3" # theirs version
@@ -10,5 +10,6 @@ cat $B > B.txt
 # always theirs ($B)
 # $B -> $A
 cp -f $B $A
-echo "`date` custom merge end" > mergeAlwaysTheirs.log
+echo "`date` custom merge end" >> mergeAlwaysTheirs.log
+echo "auto merge commit by mergeAlwaysTheirs" > $(pwd)/.git/MERGE_MSG
 exit 0
