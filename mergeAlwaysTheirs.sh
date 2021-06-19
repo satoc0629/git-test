@@ -11,5 +11,4 @@ cat $B > B.txt
 # $B -> $A
 cp -f $B $A
 echo "`date` custom merge end" >> mergeAlwaysTheirs.log
-echo "auto merge commit by mergeAlwaysTheirs" > $(pwd)/.git/MERGE_MSG
 exit 0
